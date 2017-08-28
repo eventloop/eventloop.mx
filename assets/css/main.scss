@@ -29,17 +29,18 @@ $dark-p: #444444;
 $dark-link: #F0F0F0;
 $dark-accent: #128AB2;
 
-$color-jmz7v: #4AB9D4;
-$color-asbestos: #7F8C8D;
-$color-arena: #F2D55C;
-$color-teal: #128AB2;
-$color-RojoHipsta: #C44741;
-$color-azulpro: #52616D;
-$color-verdeagua: #78B1BF;
+$jmz7v: #4AB9D4;
+$asbestos: #7F8C8D;
+$arena: #F2D55C;
+$teal: #128AB2;
+$RojoHipsta: #C44741;
+$azulpro: #52616D;
+$verdeagua: #78B1BF;
 
 $color-cream: #F7F7F7;
 $color-clouds: #F0F0F0;
 /* White shades */
+$white: #FFFFFF;
 $color-w0: #FFFFFF;
 $color-w1: #FAFAFA;
 $color-w2: #F7F7F7;
@@ -58,6 +59,11 @@ $color-b5: #353535;
 $color-b6: #262626;
 $color-b7: #171717;
 
+/* Main variables */
+$eventloop: #FFD524;
+$content-max-width: 960px;
+$padding: 1.6rem;
+
 /*
   fontStack
 */
@@ -68,3 +74,86 @@ $fontStack: 'Rubik', sans-serif;
 /*
   Structure
 */
+
+
+#hero {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: $content-max-width;
+
+  margin: 0 auto;
+  padding: 3rem $padding;
+
+  background-color: $eventloop;
+  font-size: 0;
+
+  .event,
+  .talks {
+    display: inline-block;
+    width: 50%;
+    font-family: $fontStack;
+    vertical-align: top;
+    h2.title {
+      margin-bottom: 1rem;
+      
+      font-size: 1rem;
+      font-weight: 400;
+      color: $azulpro;
+      line-height: 100%;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      
+      cursor: default;
+    }
+  }
+  .event {
+    font-size: 1rem;
+    /*@include vertical-align();*/
+    p.date {
+      font-size: 2rem;
+      font-weight: 500;
+      color: $azulpro;
+      line-height: 100%;
+      cursor: default;
+    }
+    p.location {
+      margin-top: 0.25rem;
+      font-size: 1.25rem;
+      font-weight: 400;
+      color: $azulpro;
+      line-height: 100%;
+      cursor: default;
+    }
+  }
+  .talks {
+    ul {
+      list-style-type: none;
+      li {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: $azulpro;
+        line-height: 100%;
+        cursor: default;
+        & + li {
+          margin-top: 0.5rem;
+        }
+      }
+    }
+    a.meetup {
+      margin-top: 1rem;
+      display: inline-block;
+      font-size: 1.25rem;
+      font-weight: 400;
+      color: $white;
+      background-color: $verdeagua;
+      line-height: 100%;
+      cursor: default;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 0.7rem 1.2rem;
+    }
+  }
+}

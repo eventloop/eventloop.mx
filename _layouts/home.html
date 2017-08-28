@@ -1,9 +1,13 @@
 <!DOCTYPE html>
   <html>
   <head>
+    <!-- Meta -->
     <meta charset="utf-8">
     <title>Eventloop</title>
+    <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
   </head>
   <body>
 
@@ -18,18 +22,18 @@
     <!-- Hero -->
     <div id="hero">
       <div class="event">
-        Próximo evento
-        {{ page.event_weekday }}
-        {{ page.event_date }}
-        {{ page.event_location }}
+        <h2 class="title">Próximo evento</h2>
+        <p class="date">{{ page.event_weekday }}, {{ page.event_date }}</p>
+        <p class="location">{{ page.event_location }}</p>
       </div>
       <div class="talks">
+        <h2 class="title">Pláticas</h2>
         <ul>
           <li>Plática 1</li>
           <li>Plática 2</li>
           <li>Plática 3</li>
         </ul>
-        <a href="{{ page.event_meetup_link }}" target="_blank">Registro</a>
+        <a href="{{ page.event_meetup_link }}" class="meetup" target="_blank">Registro</a>
       </div>
     </div>
 
