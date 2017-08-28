@@ -34,7 +34,7 @@ $asbestos: #7F8C8D;
 $arena: #F2D55C;
 $teal: #128AB2;
 $RojoHipsta: #C44741;
-$azulpro: #52616D;
+$azulpro: #0C2F3B;
 $verdeagua: #78B1BF;
 
 $color-cream: #F7F7F7;
@@ -76,17 +76,73 @@ $fontStack: 'Rubik', sans-serif;
 */
 
 
+
+
+
+
+#nav {
+  display: block;
+  position: fixed;
+  width: 100%;
+
+  padding: 3rem $padding;
+  z-index: 1000;
+
+  background-color: rgba(255,255,255,0.2);
+
+  .wrap {
+    margin: 0 auto;
+    width: 100%;
+    max-width: $content-max-width;
+    text-align: right;
+  }
+  .left,
+  .right {
+    display: inline-block;
+    a {
+      font-family: $fontStack;
+      font-size: 1rem;
+      font-weight: 500;
+      color: $azulpro;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      & + a {
+        margin-left: 1rem;
+      }
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+  }
+  .left {
+    float: left;
+  }
+  .right {
+  }
+}
+
+
+
+
 #hero {
   display: block;
   position: relative;
   width: 100%;
-  max-width: $content-max-width;
 
-  margin: 0 auto;
-  padding: 3rem $padding;
+  padding-top: 8rem;
 
   background-color: $eventloop;
   font-size: 0;
+
+  .wrap {
+    margin: 0 auto;
+    width: 100%;
+    padding: 6rem $padding;
+    max-width: $content-max-width;
+    margin: 0 auto;
+  }
 
   .event,
   .talks {
@@ -157,3 +213,7 @@ $fontStack: 'Rubik', sans-serif;
     }
   }
 }
+
+
+
+
