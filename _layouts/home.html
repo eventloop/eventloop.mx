@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <title>Eventloop</title>
+    <link rel="stylesheet" type="text/css" href="assets/main.css">
+  </head>
+  <body>
+
+    <!-- Header -->
+    <nav>
+      Eventloop
+      Pláticas
+      Equipo
+      Contacto
+    </nav>
+
+    <!-- Hero -->
+    <div id="hero">
+      <div class="event">
+        Próximo evento
+        {{ page.event_weekday }}
+        {{ page.event_date }}
+        {{ page.event_location }}
+      </div>
+      <div class="talks">
+        <ul>
+          <li>Plática 1</li>
+          <li>Plática 2</li>
+          <li>Plática 3</li>
+        </ul>
+        <a href="{{ page.event_meetup_link }}" target="_blank">Registro</a>
+      </div>
+    </div>
+
+    <!-- Talks -->
+    <div id="talks"></div>
+    <!-- Sponsors -->
+    <div id="sponsors"></div>
+    <!-- Team -->
+    <div id="team"></div>
+    <!-- Contact -->
+    <div id="contact"></div>
+  </body>
+</html>
