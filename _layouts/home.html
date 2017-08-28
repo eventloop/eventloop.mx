@@ -30,7 +30,10 @@
       <div class="wrap">
         <div class="event">
           <h2 class="title">Próximo evento</h2>
-          <p class="date">{{ page.event_weekday }}, {{ page.event_date }}</p>
+          <p class="date">
+            {{ page.event_weekday }}, {{ page.event_date }}<br />
+            {{ page.event_time }}
+          </p>
           <p class="location">{{ page.event_location }}</p>
         </div>
         <div class="talks">
