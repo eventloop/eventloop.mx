@@ -89,6 +89,7 @@ $fontStack: 'Rubik', sans-serif;
   z-index: 1000;
 
   background-color: rgba(255,255,255,0.2);
+  @include border-box();
 
   .wrap {
     margin: 0 auto;
@@ -132,8 +133,6 @@ $fontStack: 'Rubik', sans-serif;
   width: 100%;
 
   padding-top: 8rem;
-
-  background-color: $eventloop;
   font-size: 0;
 
   .wrap {
@@ -142,6 +141,7 @@ $fontStack: 'Rubik', sans-serif;
     padding: 6rem $padding;
     max-width: $content-max-width;
     margin: 0 auto;
+    @include border-box();
   }
 
   .event,
@@ -225,42 +225,34 @@ $fontStack: 'Rubik', sans-serif;
   position: relative;
   width: 100%;
 
-  background-color: $verdeagua;
   font-size: 0;
 
-  .wrap {
+  .talk {
     margin: 0 auto;
     width: 100%;
-    padding: 6rem $padding;
-    max-width: $content-max-width;
+    padding: 3rem $padding;
     margin: 0 auto;
     font-size: 1rem;
-  }
-
-  h2 {
-    display: block;
-    text-align: center;
-    font-family: $fontStack;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    line-height: 100%;
-    margin-bottom: 6rem;
-  }
-
-  .talk {
+    background-color: #DDE9ED;
+    @include border-box();
 
     .about {
+      display: block;
+      max-width: $content-max-width;
       font-family: $fontStack;
     }
     .name {
       display: block;
+      max-width: $content-max-width;
+      margin: 0 auto;
       font-family: $fontStack;
       font-size: 1.25rem;
       line-height: 100%;
     }
     .title {
       display: block;
+      max-width: $content-max-width;
+      margin: 0 auto;
       margin-top: 0.5rem;
       font-family: $fontStack;
       font-size: 1.5rem;
@@ -268,13 +260,15 @@ $fontStack: 'Rubik', sans-serif;
     }
     .about {
       display: block;
+      max-width: $content-max-width;
+      margin: 0 auto;
       margin-top: 0.75rem;
       font-family: $fontStack;
       font-size: 1.125rem;
       line-height: 160%;
     }
-    & + .talk {
-      margin-top: 3rem;
+    &:nth-child(2n) {
+      background-color: #FFFFFF;
     }
   }
 }
