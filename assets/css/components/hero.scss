@@ -1,0 +1,117 @@
+#hero {
+  display: block;
+  position: relative;
+  width: 100%;
+
+  padding: 12rem $padding 6rem;
+  font-size: 0;
+
+  background-color: $eventloop;
+  @include border-box();
+
+  .wrap {
+    margin: 0 auto;
+    width: 100%;
+    max-width: $content-max-width;
+    margin: 0 auto;
+  }
+
+  .event,
+  .talks {
+    display: inline-block;
+    width: 50%;
+    font-family: $fontStack;
+    vertical-align: top;
+    h2.title {
+      margin-bottom: 1rem;
+      
+      font-size: 1rem;
+      font-weight: 400;
+      color: $azulpro;
+      line-height: 100%;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #C4A729;
+      
+      cursor: default;
+    }
+  }
+  .event {
+    font-size: 1rem;
+    /*@include vertical-align();*/
+    p.date {
+      font-size: 2rem;
+      font-weight: 500;
+      color: $azulpro;
+      line-height: 130%;
+      cursor: default;
+    }
+    p.location {
+      margin-top: 0.75rem;
+      font-size: 1.25rem;
+      font-weight: 400;
+      color: $azulpro;
+      line-height: 100%;
+      cursor: default;
+      i {
+        color: inherit;
+        font-size: inherit;
+        margin-right: 0.5rem;
+        vertical-align: baseline;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .talks {
+    ul {
+      list-style-type: none;
+      li {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: $azulpro;
+        line-height: 100%;
+        cursor: default;
+        & + li {
+          margin-top: 0.5rem;
+        }
+      }
+    }
+    a.meetup {
+      margin-top: 1.75rem;
+      display: inline-block;
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: $white;
+      line-height: 100%;
+      cursor: default;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      border: 3px solid #E85635;
+      padding: 0.4rem 0.7rem;
+      color: #E85635;
+      cursor: pointer;
+      vertical-align: center;
+      @include transition((background-color 120ms, color 120ms) ease-in-out);
+      i {
+        display: inline-block;
+        margin-top: -1rem;
+        font-size: 1.125rem;
+        color: inherit;
+      }
+      &:hover {
+        border: 3px solid #D9411E;
+        background-color: #E85635;
+        color: $eventloop;
+      }
+    }
+  }
+}

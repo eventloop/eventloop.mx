@@ -1,0 +1,50 @@
+#nav {
+  display: block;
+  position: fixed;
+  width: 100%;
+
+  padding: 2rem $padding;
+  z-index: 1000;
+  cursor: default;
+
+  background-color: rgba(251,251,251,0.95);
+  @include border-box();
+
+  .wrap {
+    margin: 0 auto;
+    width: 100%;
+    max-width: $content-max-width;
+    text-align: right;
+  }
+
+  .left,
+  .right {
+    display: inline-block;
+    a {
+      font-family: $fontStack;
+      font-size: 1rem;
+      font-weight: 500;
+      color: $azulpro;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+
+      @include transition(color 70ms ease-in-out);
+
+      & + a {
+        margin-left: 1rem;
+      }
+
+      &:hover {
+        color: $eventloop;
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .left {
+    float: left;
+  }
+
+}

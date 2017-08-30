@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+    <script src="https://use.fontawesome.com/b5c11d5cf6.js"></script>
   </head>
   <body>
 
@@ -34,7 +35,12 @@
             {{ page.event_weekday }}, {{ page.event_date }}<br />
             {{ page.event_time }}
           </p>
-          <p class="location">{{ page.event_location }}</p>
+          <p class="location">
+            <a href={{ page.event_address_google_maps }} target="_blank">
+              <i class="fa fa-map-pin" aria-hidden="true"></i>
+              {{ page.event_location }}
+            </a>
+          </p>
         </div>
         <div class="talks">
           <h2 class="title">Pláticas</h2>
@@ -43,7 +49,10 @@
             <li>Plática 2</li>
             <li>Plática 3</li>
           </ul>
-          <a href="{{ page.event_meetup_link }}" class="meetup" target="_blank">Registro</a>
+          <a href="{{ page.event_meetup_link }}" class="meetup" target="_blank">
+            Registro
+            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
     </div>
