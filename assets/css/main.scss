@@ -76,6 +76,13 @@ $fontStack: 'Rubik', sans-serif;
 */
 
 
+body {
+  background-image: url('/assets/img/featured-2-yellow.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 @import 'components/hero';
 @import 'components/nav';
 @import 'components/talks';
