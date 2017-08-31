@@ -89,6 +89,7 @@
       line-height: 100%;
       text-align: center;
       color: $eventloop;
+      cursor: default;
     }
     &--about {
       display: block;
@@ -99,6 +100,16 @@
       line-height: 160%;
       text-align: center;
       color: #FAFAFA;
+      cursor: default;
+
+      a {
+        color: $eventloop;
+        cursor: pointer;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
   }
 }
