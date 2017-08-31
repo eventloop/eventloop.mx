@@ -6,8 +6,12 @@
   padding: 12rem $padding 6rem;
   font-size: 0;
 
-  /*background-color: $eventloop;*/
   @include border-box();
+
+  // SWAAAAAG
+  // transform:skew(0deg, -1.5deg);
+  // -ms-transform:skew(0deg, -1.5deg);
+  // -webkit-transform:skew(0deg, -1.5deg);
 
   .wrap {
     margin: 0 auto;
@@ -101,6 +105,10 @@
       cursor: pointer;
       vertical-align: center;
       @include transition((background-color 120ms, color 120ms) ease-in-out);
+
+transform:skew(0deg, -5deg);
+-ms-transform:skew(0deg, -5deg);
+-webkit-transform:skew(0deg, -5deg);
       i {
         display: inline-block;
         margin-top: -1rem;
@@ -122,6 +130,7 @@
     .talks {
       display: block;
       width: 100%;
+      text-align: center;
     }
     .talks {
       margin-top: 4rem;

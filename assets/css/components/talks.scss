@@ -14,6 +14,15 @@
     background-color: #F0F6FA;
     @include border-box();
 
+    // SWAG
+    background-image: -webkit-linear-gradient(200deg, #F0F6FA 33%, #FFFFFF 33%);
+    &:nth-child(2n) {
+      background-image: -webkit-linear-gradient(200deg, #F0F6FA 33%, #FFFFFF 66%);
+    }
+    &:nth-child(3n) {
+      background-image: -webkit-linear-gradient(200deg, #FFFFFF 66%, #F0F6FA 100%);
+    }
+
     .about {
       display: block;
       max-width: $content-max-width;
@@ -59,9 +68,6 @@
       font-size: 1.125rem;
       line-height: 160%;
       cursor: default;
-    }
-    &:nth-child(2n) {
-      background-color: #FFFFFF;
     }
   }
 
