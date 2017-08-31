@@ -45,6 +45,13 @@
 
   .left {
     float: left;
+
+    .logo {
+      display: block;
+      background-color: red;
+      height: 3rem;
+      padding: 0;
+    }
   }
 
 }
