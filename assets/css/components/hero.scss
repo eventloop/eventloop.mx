@@ -106,9 +106,10 @@
       vertical-align: center;
       @include transition((background-color 120ms, color 120ms) ease-in-out);
 
-transform:skew(0deg, -5deg);
--ms-transform:skew(0deg, -5deg);
--webkit-transform:skew(0deg, -5deg);
+      transform:skew(0deg, -5deg);
+      -ms-transform:skew(0deg, -5deg);
+      -webkit-transform:skew(0deg, -5deg);
+
       i {
         display: inline-block;
         margin-top: -1rem;
