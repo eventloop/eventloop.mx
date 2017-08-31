@@ -46,7 +46,6 @@
   .left {
     float: left;
     position: relative;
-
     .logo {
       position: absolute;
       display: block;
@@ -55,5 +54,23 @@
       padding: 0;
     }
   }
+}
 
+
+@media (max-width: 600px) {
+  #nav {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    .left {
+      .logo {
+        top: 1rem;
+      }
+    }
+    .right {
+      a {
+        display: block;
+        line-height: 150%;
+      }
+    }
+  }
 }
