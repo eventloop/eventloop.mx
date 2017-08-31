@@ -79,9 +79,13 @@
     margin: 0 auto;
     font-size: 1rem;
 
-    background: #141E30;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #FFFFFF;
+    // background: #F0F6FA;
+    // background: -webkit-linear-gradient(to bottom, #243B55, #141E30);
+    // background: linear-gradient(to bottom, #243B55, #141E30);
+
+    // background-image: -webkit-linear-gradient(200deg, #243B55 55%, #141E30 55%);
+    background-image: -webkit-linear-gradient(200deg, #F0F6FA 66%, #FFFFFF 66%);
 
 
     @include border-box();
@@ -94,7 +98,7 @@
       font-size: 1.25rem;
       line-height: 100%;
       text-align: center;
-      color: $eventloop;
+      color: #141E30;
       cursor: default;
     }
     &--about {
@@ -105,11 +109,11 @@
       font-size: 1.125rem;
       line-height: 160%;
       text-align: center;
-      color: #FAFAFA;
+      color: #A7A7A7;
       cursor: default;
 
       a {
-        color: $eventloop;
+        color: #141E30;
         cursor: pointer;
         text-decoration: none;
         &:hover {
