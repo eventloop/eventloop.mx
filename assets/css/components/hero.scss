@@ -115,3 +115,16 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  #hero {
+    .event,
+    .talks {
+      display: block;
+      width: 100%;
+    }
+    .talks {
+      margin-top: 4rem;
+    }
+  }
+}
