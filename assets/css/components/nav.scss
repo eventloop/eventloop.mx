@@ -45,11 +45,13 @@
 
   .left {
     float: left;
+    position: relative;
 
     .logo {
+      position: absolute;
       display: block;
-      background-color: red;
-      height: 3rem;
+      height: 2.5rem;
+      top: -.75rem;
       padding: 0;
     }
   }
