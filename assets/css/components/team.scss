@@ -1,0 +1,26 @@
+$team-title: #AFAFAF;
+$team-about: #FAFAFA;
+$team-link: #1478C9;
+
+
+#team {
+  background-color: #FFFFFF;
+
+  .title {
+    color: $team-title;
+  }
+
+  ul.members {
+    list-style-type: none;
+    font-size: 0;
+    text-align: center;
+    li {
+      display: inline-block;
+      width: 20%;
+      a {
+        color: $team-link;
+      }
+    }
+  }
+
+}

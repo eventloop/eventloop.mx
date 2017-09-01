@@ -20,7 +20,8 @@
     cursor: default;
   }
 
-  p.about {
+  p.about,
+  ul.members li {
     display: block;
     max-width: $content-max-width / 1.5;
     margin: 1rem auto 0;
@@ -31,7 +32,6 @@
     cursor: default;
 
     a {
-      color: $eventloop;
       cursor: pointer;
       text-decoration: none;
       &:hover {
