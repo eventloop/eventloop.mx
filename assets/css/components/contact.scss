@@ -1,0 +1,43 @@
+$contact-title: $eventloop;
+$contact-about: $azulpro;
+$contact-link: #1478C9;
+$copyright: #A7A7A7;
+
+#contact {
+  background-image: -webkit-linear-gradient(160deg, $eventloop 33%, #F7F7F7 33%);
+
+  .title {
+    color: $contact-title;
+  }
+
+  .about {
+    color: $contact-about;
+    a {
+      color: $contact-link;
+    }
+  }
+
+  div.copyright {
+    display: block;
+    max-width: $content-max-width;
+    margin: 6rem auto 3rem;
+    cursor: default;
+    img {
+      display: block;
+      margin: 0 auto;
+      height: 3rem;
+    }
+    p {
+      display: block;
+      margin: 1.7rem auto 0;
+      font-family: $fontStack;
+      font-size: 0.75rem;
+      font-weight: 500;
+      line-height: 100%;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: $copyright;
+    }
+  }
+}

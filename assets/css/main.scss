@@ -34,7 +34,7 @@ $asbestos: #7F8C8D;
 $arena: #F2D55C;
 $teal: #128AB2;
 $RojoHipsta: #C44741;
-$azulpro: #0C2F3B;
+
 $verdeagua: #78B1BF;
 
 $color-cream: #F7F7F7;
@@ -61,6 +61,7 @@ $color-b7: #171717;
 
 /* Main variables */
 $eventloop: #FFD524;
+$azulpro: #0C2F3B;
 $content-max-width: 960px;
 $padding: 1.6rem;
 
@@ -90,3 +91,4 @@ body {
 @import 'components/talksWanted';
 @import 'components/sponsors';
 @import 'components/team';
+@import 'components/contact';

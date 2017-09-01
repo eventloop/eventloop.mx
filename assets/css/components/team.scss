@@ -2,9 +2,8 @@ $team-title: #AFAFAF;
 $team-about: #FAFAFA;
 $team-link: #1478C9;
 
-
 #team {
-  background-color: #FFFFFF;
+  background-image: -webkit-linear-gradient(160deg, $eventloop 66%, #FFFFFF 66%);
 
   .title {
     color: $team-title;
