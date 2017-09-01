@@ -93,12 +93,12 @@
       text-decoration: none;
       text-transform: uppercase;
       letter-spacing: 2px;
-      border: 3px solid #E85635;
       padding: 0.4rem 0.7rem;
-      color: #E85635;
+      color: #1478C9;
       cursor: pointer;
       vertical-align: center;
       @include transition((background-color 120ms, color 120ms) ease-in-out);
+      border: 3px solid #1478C9;
 
       i {
         display: inline-block;
@@ -107,8 +107,8 @@
         color: inherit;
       }
       &:hover {
-        border: 3px solid #D9411E;
-        background-color: #E85635;
+        border: 3px solid #1478C9;
+        background-color: #1478C9;
         color: $eventloop;
       }
     }
