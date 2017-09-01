@@ -1,11 +1,9 @@
-$sponsors-title: #FFFFFF;
-$sponsors-about: #FAFAFA;
-$sponsors-link: #FAFAFA;
+$sponsors-title: $azulpro;
+$sponsors-about: #F7F7F7;
+$sponsors-link: #1478C9;
 
 #sponsors {
-  background: #485563;
-  background: -webkit-linear-gradient(to right, #29323c, #485563);
-  background: linear-gradient(to right, #29323c, #485563);
+  background: #1478C9;
 
   .title {
     color: $sponsors-title;

@@ -1,9 +1,9 @@
-$team-title: #AFAFAF;
+$team-title: $azulpro;
 $team-about: #FAFAFA;
-$team-link: #1478C9;
+$team-link: #FFFFFF;
 
 #team {
-  background-image: -webkit-linear-gradient(160deg, $eventloop 66%, #FFFFFF 66%);
+  // background: #1478C9;
 
   .title {
     color: $team-title;
@@ -15,9 +15,13 @@ $team-link: #1478C9;
     text-align: center;
     li {
       display: inline-block;
-      width: 20%;
+      width: auto;
       a {
         color: $team-link;
+      }
+      & + li {
+        margin-left: 1rem;
+        color: red;
       }
     }
   }
