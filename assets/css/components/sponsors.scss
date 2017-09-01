@@ -1,6 +1,5 @@
 $sponsors-title: $azulpro;
-$sponsors-about: #F7F7F7;
-$sponsors-link: #1478C9;
+$sponsors-about: #FFFFFF;
 
 #sponsors {
   background: #1478C9;
@@ -11,9 +10,5 @@ $sponsors-link: #1478C9;
 
   .about {
     color: $sponsors-about;
-    a {
-      color: $sponsors-link;
-    }
   }
-
 }
