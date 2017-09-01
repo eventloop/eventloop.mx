@@ -1,14 +1,18 @@
+$talksWanted-title: #141E30;
+$talksWanted-about: #A7A7A7;
+$talksWanted-link: #1478C9;
+
 #talksWanted {
   background-image: -webkit-linear-gradient(200deg, #F0F6FA 66%, #FFFFFF 66%);
 
   .main {
-    color: #141E30;
+    color: $talksWanted-title;
   }
 
   .about {
-    color: #A7A7A7;
+    color: $talksWanted-about;
     a {
-      color: #141E30;
+      color: $talksWanted-link;
     }
   }
 }
