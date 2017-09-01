@@ -83,7 +83,9 @@ body {
   background-attachment: fixed;
 }
 
+@import 'components/common';
 @import 'components/hero';
 @import 'components/nav';
 @import 'components/talks';
+@import 'components/talksWanted';
 @import 'components/sponsors';
