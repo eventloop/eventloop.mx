@@ -1,3 +1,6 @@
+---
+---
+
 /*--------------------------------------------------
   
   Project Name: Eventloop
@@ -10,85 +13,26 @@
 */
 
 @import 'normalize';
-@import 'odyssey';
 
-/*
-  Colors
-*/
-$color-main: #4AB9D4;
+$fontStack: 'Raleway', sans-serif;
+$fontStack: 'Roboto Slab', sans-serif;
 
-/* Light */
-
-/* Dark */
-$dark-background: #0F1117;
-$dark-h1: #444444;
-$dark-h2: #444444;
-$dark-h3: #444444;
-$dark-h4: #444444;
-$dark-p: #444444;
-$dark-link: #F0F0F0;
-$dark-accent: #128AB2;
-
-$jmz7v: #4AB9D4;
-$asbestos: #7F8C8D;
-$arena: #F2D55C;
-$teal: #128AB2;
-$RojoHipsta: #C44741;
-
-$verdeagua: #78B1BF;
-
-$color-cream: #F7F7F7;
-$color-clouds: #F0F0F0;
-/* White shades */
-$white: #FFFFFF;
-$color-w0: #FFFFFF;
-$color-w1: #FAFAFA;
-$color-w2: #F7F7F7;
-$color-w3: #F5F5F5;
-$color-w4: #FAFAFA;
-$color-w5: #E7E7E7;
-$color-w6: #DADADA;
-$color-w7: #D0D0D0;
-/* Dark shades*/
-$color-b0: #979797;
-$color-b1: #717171;
-$color-b2: #626262;
-$color-b3: #535353;
-$color-b4: #444444;
-$color-b5: #353535;
-$color-b6: #262626;
-$color-b7: #171717;
-
-/* Main variables */
-$eventloop: #FFD524;
-$azulpro: #0C2F3B;
-$content-max-width: 960px;
-$padding: 1.6rem;
-
-/*
-  fontStack
-*/
-
-
-$fontStack: 'Rubik', sans-serif;
-
-/*
-  Structure
-*/
-
-
-body {
-  background-image: url('/assets/img/featured-2-yellow.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+body,html {
+  font-family: 'Roboto Slab';
+}
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 500;
+  font-family: 'Raleway';
 }
 
-@import 'components/common';
-@import 'components/hero';
-@import 'components/nav';
-@import 'components/talks';
-@import 'components/talksWanted';
-@import 'components/sponsors';
-@import 'components/team';
+$eventloopYelow: #F8D000;
+$slackGreen: #1B924B;
+$sectionGrey: rgb(201, 201, 201);
+$eventloopBlue: #1561BB;
+
+@import 'components/header';
+@import 'components/event';
+@import 'components/learn';
+@import 'components/present';
+@import 'components/sponsor';
 @import 'components/contact';

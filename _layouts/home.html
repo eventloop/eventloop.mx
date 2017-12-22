@@ -4,148 +4,25 @@
     <!-- Meta -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Eventloop es una noche al mes donde nos reunimos a hablar de JavaScript, Ingeniería de Software y GIFs de gatos – Eventloop</title>
+    <title>Eventloop</title>
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
-    <script src="https://use.fontawesome.com/b5c11d5cf6.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Roboto+Slab:300,400,700" rel="stylesheet">
     <!-- Icon -->
     <link rel="icon" type="image/png" href="/assets/img/eventloop.png" />
   </head>
   <body>
-
+    <main>
     <!-- Header -->
-    <nav id="nav">
-      <div class="wrap">
-        <div class="left">
-          <a href="">
-            <img src="/assets/img/eventloop.svg" alt="" class="logo">
-          </a>
-        </div>
-        <div class="right">
-          <a href="#talks">Pláticas</a>
-          <a href="#team">Equipo</a>
-          <a href="#contact">Acerca De</a>
-        </div>
-      </div>
-    </nav>
 
-    <!-- Hero -->
-    <div id="hero">
-      <div class="wrap">
-        <div class="event">
-          <h2 class="title">Próximo evento</h2>
-          <p class="date">
-            {{ page.event_weekday }}, {{ page.event_date }}<br />
-            {{ page.event_time }}
-          </p>
-          <p class="location">
-            <a href={{ page.event_address_google_maps }} target="_blank">
-              <i class="fa fa-map-pin" aria-hidden="true"></i>
-              {{ page.event_location }}
-            </a>
-          </p>
-        </div>
-        <div class="talks">
-          <h2 class="title">Pláticas</h2>
-          <ul>
-            <li>{{ page.talks_talk_1_title }}</li>
-            <li>{{ page.talks_talk_2_title }}</li>
-            <li>{{ page.talks_talk_3_title }}</li>
-          </ul>
-          <a href="{{ page.event_meetup_link }}" class="meetup" target="_blank">
-            Registro
-            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
-          </a>
-        </div>
-      </div>
-    </div>
+    {% include header.html %}
+    {% include event.html %}
+    {% include learn.html %}
+    {% include present.html %}
+    {% include sponsor.html %}
+    {% include footer.html %}
 
-    <!-- Talks -->
-    <div id="talks">
-      <div class="talk">
-        <div class="img"></div>
-        <div class="about">
-          <p class="name"><a href="{{ page.talks_talk_1_human_link }}" target="_blank">{{ page.talks_talk_1_human }}</a></p>
-          <p class="title">{{ page.talks_talk_1_title }}</p>
-          <p class="about">{{ page.talks_talk_1_about }}</p>
-        </div>
-      </div>
-      <div class="talk">
-        <div class="img"></div>
-        <div class="about">
-          <p class="name"><a href="{{ page.talks_talk_2_human_link }}" target="_blank">{{ page.talks_talk_2_human }}</a></p>
-          <p class="title">{{ page.talks_talk_2_title }}</p>
-          <p class="about">{{ page.talks_talk_2_about }}</p>
-        </div>
-      </div>
-      <div class="talk">
-        <div class="img"></div>
-        <div class="about">
-          <p class="name"><a href="{{ page.talks_talk_3_human_link }}" target="_blank">{{ page.talks_talk_3_human }}</a></p>
-          <p class="title">{{ page.talks_talk_3_title }}</p>
-          <p class="about">{{ page.talks_talk_3_about }}</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Talks Wanted -->
-    <div id="talksWanted" class="standardBox">
-      <div class="wrap">
-        <h2 class="title">¿Quieres dar una plática?</h2>
-        <p class="about">Siempre estamos <a href="https://github.com/eventloop/platicas#quiero-presentar-o-adoptar-una-plática-" target="_blank">en busca de pláticas</a> para próximos Eventloop.<br />Si no has dado una plática antes no hay problema, te guiaremos y ayudaremos a que tu plática sea un éxito.</p>
-      </div>
-    </div>
-    <!-- Sponsors -->
-    <div id="sponsors" class="standardBox">
-      <div class="wrap">
-        <h2 class="title">Sponsors</h2>
-        <p class="about">Eventloop no sería posible sin la ayuda de nuestros sponsors</p>
-      </div>
-    </div>
-    <!-- Team -->
-    <div id="team" class="standardBox">
-      <div class="wrap">
-        <h2 class="title">Equipo</h2>
-        <ul class="members">
-          <li><a href="https://twitter.com/jeduan" target="_blank">Jeduan</a></li>
-          <li><a href="https://twitter.com/marulango" target="_blank">Maru</a></li>
-          <li><a href="https://twitter.com/sparragus" target="_blank">Richard</a></li>
-          <li><a href="https://twitter.com/cool_acid" target="_blank">Eduardo</a></li>
-          <li><a href="https://twitter.com/jmz7v" target="_blank">Julio</a></li>
-          <li><a href="https://twitter.com/oscarOcegueraB" target="_blank">Oscar</a></li>
-          <li><a href="https://twitter.com/babasbot" target="_blank">Luis</a></li>
-          <li><a href="https://twitter.com/rodikana" target="_blank">Rodrigo</a></li>
-        </ul>
-      </div>
-    </div>
-    <!-- Contact -->
-    <div id="contact" class="standardBox">
-      <div class="wrap">
-        <h2 class="title">Acerca de Eventloop</h2>
-        <p class="about">Eventloop es una noche al mes donde nos reunimos a hablar de JavaScript, Ingeniería de Software y GIFs de gatos.</p>
-        <p class="about">Tenemos 3 charlas técnicas de 20 minutos donde profesionales nos platican de sus experiencias del Mundo Real&reg;.</p>
-        <p class="about">El evento está pensado para desarrolladores de todos los niveles de experiencia.</p>
-        <p class="about">Las puertas abren a las 7:30, las pláticas inician a las 8:00. Tu RSVP no es una garantía de acceso. El acceso se otorga en el orden de llegada. Llega 15 minutos antes.</p>
-        <p class="about">Nuestros eventos se rigen por nuestro <a href="https://github.com/eventloop/codigo-de-conducta" target="_blank">código de conducta</a> que garantiza que tendremos un evento que le de la bienvenida a todos los asistentes.</p>
-        <br />
-        <p class="about">
-          <a href="https://twitter.com/eventloopmx" target="_blank" class="social">
-            <i class="fa fa-twitter-square" aria-hidden="true"></i>
-            @eventloopmx
-          </a>
-          &nbsp;&nbsp;&nbsp;
-          <a href="https://www.facebook.com/eventloopmx/" target="_blank" class="social">
-            <i class="fa fa-facebook-square" aria-hidden="true"></i>
-            /eventloopmx
-          </a>
-        </p>
-        <div class="copyright">
-          <img src="/assets/img/eventloop.svg" alt="" class="logo">          
-          <p>&copy; 2017 – Eventloop</p>
-        </div>
-      </div>
-    </div>
+    </main>
   </body>
 </html>
