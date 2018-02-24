@@ -1,28 +1,26 @@
-<section class="Event">
+<section class="Event" name="eventos">
   <div class="Event-stripes">
     <span></span>
     <span></span>
     <span></span>
   </div>
   <div class="StripeContent">
-      <a href="{{ site.data.meetup.href }}">
-        <div class="H2">
-                    <div class="shield">
-                        <img src="/assets/img/fa/calendar-alt.svg" alt="" srcset="">
-                    </div>
-                    <h2>Eventloop Enero</h2> 
-                </div>
-      </a>
-
-      <div class="Content">
-        {% for speaker in site.data.speakers %}
-            <div class="User">
-                <img src="{{ speaker.img }}" alt="" srcset="">
-                <h3 class="Name">{{ speaker.name }}</h3>
-                <div class="Desc">{{ speaker.desc }}</div>
-            </div>
-        {% endfor %}
+    <a href="{{ site.data.meetup.href }}">
+      <div class="H2">
+        <div class="shield">
+          <img src="/assets/img/fa/calendar-alt.svg" alt="" srcset="">
+        </div>
+        <h2>Eventloop Enero</h2>
       </div>
+    </a>
+    <div class="Content">
+      {% for speaker in site.data.speakers %}
+      <div class="User">
+        <img src="{{ speaker.img }}" alt="" srcset="">
+        <h3 class="Name">{{ speaker.name }}</h3>
+        <div class="Desc">{{ speaker.desc }}</div>
+      </div>
+      {% endfor %}
+    </div>
   </div>
-
 </section>
