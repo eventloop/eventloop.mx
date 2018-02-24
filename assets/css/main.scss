@@ -1,24 +1,15 @@
-
-/*--------------------------------------------------
-  
-  Project Name: Eventloop
-  Project URL: https://eventloop.mx
-
---------------------------------------------------*/
-
-/*
-  Primary imports
-*/
+// Project Name: Eventloop
+// Project URL: https://eventloop.mx
 
 @import 'normalize';
 
-$fontStack: 'Raleway', sans-serif;
 $fontStack: 'Roboto Slab', sans-serif;
 
-body,html {
+body, html {
   font-family: 'Roboto Slab';
 }
-h1,h2,h3,h4,h5,h6 {
+
+h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   font-family: 'Raleway';
 }
