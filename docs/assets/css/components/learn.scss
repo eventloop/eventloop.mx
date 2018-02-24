@@ -1,0 +1,40 @@
+.Learn {
+  margin-bottom: 20rem;
+  margin-top: -37rem;
+  .H2 {
+    padding: 2rem 1.6rem;
+    display: flex;
+    color: black;
+    flex-direction: column;
+    align-items: center;
+    
+    .shield {
+      background-color:  $eventloopYelow;
+      border-radius: 50%;
+      width: 3.2rem;
+      height: 3.2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    img {
+      width: 2rem;
+    }
+  }
+  .Content {
+    display: flex;
+    .Half {
+      padding: 4rem 2rem;
+      text-decoration: none;
+      color: black;
+      text-align: center;
+      &.Workshop {
+        background-color: $eventloopYelow;
+      }
+      &.Slack {
+        background-color: $slackGreen;
+      }
+    }
+  }
+}

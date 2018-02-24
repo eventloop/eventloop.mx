@@ -1,0 +1,99 @@
+
+
+
+main .Event {
+  margin-top: 8rem;
+  position: relative;
+
+  .Event-stripes {
+    z-index: -1;
+    width: 100%;
+    transform: skewY(-12deg);
+    display: grid;
+    grid: repeat(2,200px)/1fr minmax(0,800px) 1fr;
+    transform-origin: 0;
+    background: linear-gradient(100grad,$sectionGrey,lighten($sectionGrey, 15%) 50%);
+    height: calc(100% - 150px);
+    align-content: space-between;
+    & :nth-child(1) {
+      grid-column: 2;
+      background: linear-gradient(100grad,rgba(41,50,205,0) 70% ,rgba(216, 216, 216, 0.813));
+    }
+    & :nth-child(2) {
+      background: linear-gradient(100grad,lighten($eventloopYelow, 20%),$eventloopYelow);
+    }
+    & :nth-child(3) {
+      grid-row: 2;
+      background: linear-gradient(100grad,lighten($eventloopBlue, 20%),$eventloopBlue);  
+    }
+  }
+  .StripeContent {
+    //position: absolute;
+    transform: translateY(-37rem);
+    top: -13rem;
+    width: 100%;
+  }
+  a {
+    text-decoration: none;
+    .H2 {
+      padding: 2rem 1.6rem;
+      display: flex;
+      color: black;
+      flex-direction: column;
+      align-items: center;
+      
+      .shield {
+        background-color:  $eventloopYelow;
+        border-radius: 50%;
+        width: 3.2rem;
+        height: 3.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      img {
+        width: 2rem;
+      }
+    }
+  }
+
+  .Content {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 1.6rem;
+    justify-content: space-around;
+    margin-top: -4rem;
+    .User {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: calc(30% - 1.6rem);
+      background-color: white;
+      box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+      border-radius: 4px;
+      padding: 0.8rem;
+      .Desc {
+        text-align: justify;
+      }
+    }
+    img {
+      border-radius: 50%;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  main .Event {
+    .Content {
+      flex-direction: column;
+      align-items: center;
+      .User {
+        width: calc(80% - 1.6rem);
+        &:not(:last-child) {
+          margin-bottom: 5rem;
+        }
+      }
+    }
+  }
+}
