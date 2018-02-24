@@ -4,8 +4,8 @@
 
 - Ruby – [link](https://www.ruby-lang.org/en/)
 - SASS – [link](https://sass-lang.com/)
-– Jekyll – [link](https://jekyllrb.com/)
-– Bundler – [link](http://bundler.io/)
+- Jekyll – [link](https://jekyllrb.com/)
+- Bundler – [link](http://bundler.io/)
 
 Si tienes Ruby instalado, puedes correr el siguiente comando para instalar el repositorio y las dependencias
 
