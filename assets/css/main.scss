@@ -28,8 +28,8 @@ $slackGreen: #1B924B;
 $sectionGrey: rgb(201, 201, 201);
 $eventloopBlue: #1561BB;
 
-@import 'components/header';
 @import 'components/event';
+@import 'components/header';
 @import 'components/learn';
 @import 'components/present';
 @import 'components/sponsor';
