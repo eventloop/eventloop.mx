@@ -86,7 +86,7 @@ main header  {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: 2rem;
+        margin: 0 0 2rem 2rem;
         box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
         border-radius: 4px;
         &:hover {
@@ -130,6 +130,9 @@ main header  {
 }
 
 @media (max-width: 600px) {
+  .Social{
+    flex-flow: wrap;
+  }
   main header {
     .Top-bar {
       padding: 1rem 1.6rem;
