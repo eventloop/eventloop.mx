@@ -24,3 +24,7 @@ deploy:
 	rm -rf docs && \
 	mkdir docs && \
 	cp -r _site/* docs
+
+build:
+	sass assets/css/main.scss -t compressed
+	jekyll build
