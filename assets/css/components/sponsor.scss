@@ -23,11 +23,10 @@
     }
   }
   .Content {
-    padding: 1rem 3rem;
     .Box {
       padding: 1rem 1.6rem;
-      text-align: justify;
       box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+      line-height: 130%;
       ul {
         li {
           margin-bottom: 0.8rem;

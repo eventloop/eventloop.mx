@@ -5,17 +5,18 @@ $copyright: #A7A7A7;
 $eventloop: #FFD524;
 $content-max-width: 780px;
 
+.contentWrap {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: $content-max-width;
+}
+
 #contact {
   padding: 4rem 4rem;
   text-align: center;
   background-image: -webkit-linear-gradient(160deg, $eventloop 33%, #F7F7F7 33%);
 
-  .wrap {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    max-width: $content-max-width;
-  }
 
   .title {
     color: $contact-title;
