@@ -1,23 +1,36 @@
 $contact-title: #0C2F3B;
-$contact-about: #A7A7A7;
+$contact-about: #777777;
 $contact-link: #1478C9;
 $copyright: #A7A7A7;
 $eventloop: #FFD524;
-$content-max-width: 960px;
+$content-max-width: 780px;
 
 #contact {
-  padding: 1rem 4rem;
+  padding: 4rem 4rem;
   text-align: center;
   background-image: -webkit-linear-gradient(160deg, $eventloop 33%, #F7F7F7 33%);
 
+  .wrap {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: $content-max-width;
+  }
+
   .title {
     color: $contact-title;
+    cursor: default;
   }
 
   .about {
     color: $contact-about;
+    cursor: default;
     a {
       color: $contact-link;
+      &:hover {
+        background-color: $contact-link;
+        color: #FFFFFF;
+      }
     }
     .social {
       white-space: nowrap;
